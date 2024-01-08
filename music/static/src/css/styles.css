@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #409300;
+}
+nav .logo{
+    font-size: 50px;
+}
+h2{
+    margin-top: 1%;
+}
+nav a{
+    margin: 0px 15%;
+    font-size: 18px;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 2vh 15vw;
+    display: flex;
+    margin-right: 0%;
+    flex-direction: column;
+}
+.params{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding-left: 1%;
+    max-width: 84%;
+}
+.sorting{
+    display: flex;
+    flex-direction: column;
+}
+.infoBlock{
+    margin-left: 5%;
+}
+.musicBlock p{
+    margin: 1px;
+}
+.musicBlock audio{
+    margin: 5% 0px;
+}
+button{
+    margin: 1% 0%;
+    background-color: #62B476;
+    border: 0px;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+}
+.buttons button{
+    width: 140px;
+    margin-right: 20px;
+}
+.deleteButton{
+    background-color: #e17c7c;
+}
+button:hover {
+    background-color: #409300;
+}
+.deleteButton:hover{
+    background-color: rgb(223, 57, 57);
+}
+#filters{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#filters select{
+    margin: 2% 0%;
+}
+.filterElement{
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.sortElement{
+    display: flex;
+    flex-direction: column;
+}
+.sortElement select{
+    margin: 5px 0%;
+    max-width: 15%;
+}
+.musicBlock{
+    align-items: center;
+    display: flex;
+    margin-top: 1%;
+    max-width: 85%;
+    height: 316px;
+    border: 1px solid black;
+}
+#paramsButton{
+    width: 15%;
+}
+.imageBlock{
+    display: flex;
+}
+.addSong{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+}
+
+/* Добавление песни */
+
+#addSongForm{
+    margin: 2% 40%;
+    display: flex;
+    flex-direction: column;
+}
+#addSongForm label{
+    margin-top: 10px;
+}
+#addSongForm input{
+    margin-bottom: 5px;
+}
+.imageBlock img{
+    max-width: 316px;
+    max-height: 316px;
+}
+
+/* Карточка */
+
+.img>img{
+    max-width: 450px;
+    max-height: 450px;
+}
+.imginfo{
+    display: flex;
+    margin-top: 3%;
+}
+.info h1{
+    margin-top: 0px;
+}
+.img{
+   margin-left: 10%;
+}
+audio{
+    margin-top: 20px 0%;
+}
+.audio{
+    width: 300px;
+}
+#reviewForm{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+}
+#reviewForm h2{
+    margin-bottom: 0px;
+}
+#reviewForm label{
+    margin: 2% 0px;
+}
+.review{
+    max-width: 85%;
+    margin-top: 15px;
+    border-top: 1px solid black;
+}

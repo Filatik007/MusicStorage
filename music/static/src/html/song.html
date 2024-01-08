@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav><a class="logo" href="../../index.html">Music</a><a href="../html/addSong.html">Добавить песню</a></nav>
+    <div class="container">
+        <div class="imginfo">
+            <div class="info">
+                <h1></h1>
+                <p class="artistsP">Исполнители: </p>
+                <p class="producersP">Продюсеры: </p>
+                <p class="genresP">Жанры: </p>
+                <p class="dateP">Дата выхода:</p>
+                <p class="albumP">Альбом: </p>
+                <p class="recordStrudioP">Студия звукозаписи: </p>
+                <p class="labelP">Музыкальный лейбл: </p>
+                <p class="rateP">Пользовательский рейтинг: </p>
+            </div>
+            <div class="img"><img src="../img/"></div>
+        </div>
+        <div class="reviews" id="reviews">
+            <iframe name="votar" style="display:none;"></iframe>
+            <form id="reviewForm" target="votar" onsubmit="addReview()">
+                <h2>Отзывы</h2>
+                <p>Оценка: </p>
+                <div class="radio">
+                    <input type="radio" name="scoreRadio" id="score1" value="1" required>
+                    <label for="score1">1</label>
+                    <input type="radio" name="scoreRadio" id="score2" value="2">
+                    <label for="score2">2</label>
+                    <input type="radio" name="scoreRadio" id="score3" value="3">
+                    <label for="score3">3</label>
+                    <input type="radio" name="scoreRadio" id="score4" value="4">
+                    <label for="score4">4</label>
+                    <input type="radio" name="scoreRadio" id="score5" value="5">
+                    <label for="score5">5</label>
+                </div>
+                <label for="nameInput">Введите ваше имя: </label>
+                <input type="text" name="nameInput" id="nameInput" placeholder="Ваше имя" required>
+                <label for="textReviewInput">Отзыв:</label>
+                <textarea name="textReviewInput" id="textReviewInput" rows="5" required></textarea>
+                <button type="submit">Добавить отзыв</button>
+            </form>
+
+        </div>
+    </div>
+    <script src="../../dist/song.js"></script>
+</body>
+</html>

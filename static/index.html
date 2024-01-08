@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Music</title>
+</head>
+<body>
+    <nav><a class="logo" href="./index.html">Music</a><a href="./src/html/addSong.html">Добавить песню</a></nav>
+    <div class="container">
+        <div class="params">
+            <h2>Фильтры</h2>
+            <div class="filters" id="filters">
+            </div>
+            <h2>Сортировка</h2>
+            <div class="sorting">
+                <div class="sortElement">
+                    <label for="sortBy">Тип сортировки:</label>
+                    <select name="sortBy" id="sortBy">
+                        <option value="title" selected>По алфавиту</option>
+                        <option value="released" >По дате релиза</option>
+                        <option value="rate" >По пользовательскому рейтингу</option>
+                    </select>
+                </div>
+                <div class="sortElement">
+                    <label for="typeSort">Порядок сортировки:</label>
+                    <select name="typeSort" id="typeSort">
+                        <option value="asc" selected>По возрастанию</option>
+                        <option value="desc">По убыванию</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="filter()" id="paramsButton">Применить</button>
+        </div>
+        <div class="addSong">
+            <h2>Песни</h2>
+            <button onclick="window.location.href='src/html/addSong.html'">Добавить песню</button>
+        </div>
+        <div id="music"></div>
+    </div>
+    <script src="dist/main.js"></script>
+</body>
+</html>
